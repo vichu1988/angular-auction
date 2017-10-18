@@ -13,3 +13,4 @@ An Angular PWA Auction's app
 * Clone the repo
 * Run `npm i` or `yarn`
 * run `ng serve`
+* To use the Angular snippets simply type `a-` and hit tab to get the full list of snippets available.
