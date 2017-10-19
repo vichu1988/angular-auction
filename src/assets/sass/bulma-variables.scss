@@ -1,0 +1,9 @@
+@import "./app-variables.scss";
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+// All overrides go here
+// http://bulma.io/documentation/overview/variables/
+
+$red: $app-red;
+$danger: $red;
