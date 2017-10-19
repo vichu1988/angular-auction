@@ -2,10 +2,11 @@
 @import "./assets/sass/app-variables.scss";
 @import "./assets/sass/bulma-variables.scss";
 @import "./assets/sass/bulma-custom.scss";
+@import "./assets/sass/app-shadows.scss";
 
 
 .is-subtitle{
-  border-bottom: 1px solid #CCCCCC;
+  border-bottom: 1px solid $app-light-grey;
 
   .column.is-narrow{
     .button{
@@ -29,7 +30,7 @@
   .level.is-top-bid{
     .heading,
     .title{
-      color: $blue;
+      color: $app-blue;
       margin-bottom: 0;
     }
   }

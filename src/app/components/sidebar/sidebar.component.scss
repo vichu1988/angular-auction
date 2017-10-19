@@ -1,3 +1,5 @@
+@import "../../../assets/sass/app-variables.scss";
+
 :host{
   display: block;
   min-width: 200px;
@@ -8,7 +10,7 @@ aside {
   position: fixed;
   top: 0;
   left: 0;
-  background: #999999;
+  background: $app-grey;
   width: 200px;
   height: 100vh;
   z-index: 9999;
@@ -34,7 +36,7 @@ aside {
 
 .menu-list{
   li a {
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid $app-light-grey;
     &.is-borderless{
       border: none;
     }
