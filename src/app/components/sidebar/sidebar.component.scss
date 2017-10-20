@@ -74,6 +74,10 @@ aside {
   border-top-right-radius: $radius;
   border-bottom-right-radius: $radius;
 
+  &:focus,&:active{
+    outline: none;
+  }
+
   span{
     background-color: $app-white;
     display: block;
