@@ -1,6 +1,11 @@
 @import "../assets/sass/app-variables.scss";
 
+main{
+  min-height: calc(100vh - #{$app-footer-height});
+}
+
 footer{
   padding: 0.5rem 1.5rem;
   border-top: 1px solid $app-light-grey;
+  max-height: $app-footer-height;
 }
