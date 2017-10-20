@@ -1,0 +1,60 @@
+@import "../../../assets/sass/app-variables.scss";
+@import "../../../assets/sass/bulma-variables.scss";
+
+:host{
+  &.is-row {
+    display: block;
+    padding-bottom: $size-7;
+    &:not(:first-child){
+      padding-top: $size-7;
+    }
+  }
+}
+.box.is-offering{
+  h5 {
+    color: $app-red;
+  }
+  .level.is-top-bid{
+    .heading,
+    .title{
+      color: $app-blue;
+      margin-bottom: 0;
+    }
+  }
+  .level.is-place-bid{
+    .heading{
+      margin-bottom: 0;
+    }
+    .button{
+      margin-bottom: 10px;
+    }
+  }
+  &.is-offering-row{
+    .heading {
+      display: none;
+    }
+    .level.is-place-bid{
+      .heading{
+        display: block;
+      }
+    }
+    @media screen and (min-width: $tablet) {
+      .heading {
+        display: block;
+      }
+      .level.is-place-bid{
+        .heading{
+          display: none;
+        }
+      }
+      .level.is-place-bid{
+        .button{
+          margin-bottom: 0;
+        }
+      }
+      .level:not(:last-child){
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

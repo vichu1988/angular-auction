@@ -6,67 +6,14 @@
 
 
 .is-subtitle{
-  border-bottom: 1px solid $app-light-grey;
-
   .column.is-narrow{
+    padding-right: 0;
     .button{
       display: block;
       width: 100%;
-    }
-     @media screen and (min-width: $tablet) {
-      padding-right: 0;
-      .button {
-        display: inline-block;
-        width: auto;
-      }
-    }
-  }
-}
-
-.box.is-offering{
-  h5 {
-    color: $app-red;
-  }
-  .level.is-top-bid{
-    .heading,
-    .title{
-      color: $app-blue;
-      margin-bottom: 0;
-    }
-  }
-  .level.is-place-bid{
-    .heading{
-      margin-bottom: 0;
-    }
-    .button{
-      margin-bottom: 10px;
-    }
-  }
-  &.is-offering-row{
-    .heading {
-      display: none;
-    }
-    .level.is-place-bid{
-      .heading{
-        display: block;
-      }
-    }
-    @media screen and (min-width: $tablet) {
-      .heading {
-        display: block;
-      }
-      .level.is-place-bid{
-        .heading{
-          display: none;
-        }
-      }
-      .level.is-place-bid{
-        .button{
-          margin-bottom: 0;
-        }
-      }
-      .level:not(:last-child){
-        margin-bottom: 0.5rem;
+      @media screen and (min-width: $tablet) {
+         display: inline-block;
+         width: auto;
       }
     }
   }
