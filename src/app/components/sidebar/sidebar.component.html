@@ -1,4 +1,4 @@
-<aside>
+<aside [ngClass]="{'is-active': menuOpen}">
   <div class="sidebar-container">
     <div class="sidebar-logo has-text-centered">
       <img tabindex="0" src="http://www.placehold.it/100x100" alt="" class="z-depth-3">
@@ -27,4 +27,12 @@
           </ul>
     </div>
   </div>
+  <div class="menu-toggle-wrapper" [ngClass]="{'z-depth-2': !menuOpen}" (click)="toggleMenu()">
+    <button class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
 </aside>
+<div class="shadow" [ngClass]="{'is-active': menuOpen}" (click)="closeMenu()"></div>
