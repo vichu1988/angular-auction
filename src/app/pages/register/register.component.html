@@ -1,0 +1,79 @@
+<app-sub-title text="Make an Offer"></app-sub-title>
+<br>
+<div class="columns">
+  <div class="column is-8">
+    <form action="">
+      <!-- Location -->
+      <div class="field">
+        <label class="label is-size-7" for="location">Location</label>
+        <div class="control">
+          <div class="select">
+            <select id="location" name="location">
+              <option value="blr">Bengaluru</option>
+              <option value="ggn">Gurugram</option>
+              <option value="nda">Noida</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- Category -->
+      <div class="field">
+        <label class="label is-size-7" for="category">Category</label>
+        <div class="control">
+          <div class="select">
+            <select id="category" name="category">
+              <option value="0">F &amp; B</option>
+              <option value="1">Fitness &amp; Grooming</option>
+              <option value="2">Miscelleneous</option>
+              <option value="3">Office Chores</option>
+              <option value="4">Learning</option>
+              <option value="5">Travel</option>
+              <option value="6">Entertainment</option>
+              <option value="7">Photography</option>
+              <option value="8">Art &amp; Craft</option>
+              <option value="9">Music</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- Title -->
+      <div class="field">
+        <label class="label is-size-7" for="offer-title">Offer Title</label>
+        <div class="control">
+          <input id="offer-title" class="input" type="text" placeholder="Enter a suitable title">
+        </div>
+      </div>
+      <!-- Description -->
+      <div class="field">
+        <label class="label is-size-7" for="offer-description">Description</label>
+        <div class="control">
+          <textarea id="offer-description" class="textarea" placeholder="Enter a suitable description"></textarea>
+        </div>
+      </div>
+      <!-- Bid Amount -->
+      <label class="label is-size-7" for="minimum-bid">Minimum Bid Price</label>
+      <div class="field has-addons">
+        <div class="control">
+          <a href="" class="button is-static">&#8377;</a>
+        </div>
+        <div class="control">
+          <input id="minimum-bid" type="number" class="input" placeholder="Minimum Bid">
+        </div>
+      </div>
+        <!-- Offered by -->
+        <div class="field">
+          <label class="label is-size-7" for="offer-by">Offer Made By</label>
+          <div class="control">
+            <input id="offer-by" class="input" type="text" placeholder="Who is offering?">
+          </div>
+        </div>
+        <br>
+        <!-- Submit -->
+        <div class="field">
+          <div class="control">
+            <button type="submit" class="button is-danger">Submit</button>
+          </div>
+        </div>
+    </form>
+  </div>
+</div>

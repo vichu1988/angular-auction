@@ -4,6 +4,22 @@ import { NgModule } from '@angular/core';
 
 const routes: Routes = [
   {
+    path: 'offer/details/:offerID',
+    loadChildren: 'app/pages/details/details.module#DetailsModule'
+  },
+  {
+    path: 'offers/location/:locationID',
+    loadChildren: 'app/pages/location/location.module#LocationModule'
+  },
+  {
+    path: 'offers/category/:categoryID',
+    loadChildren: 'app/pages/category/category.module#CategoryModule'
+  },
+  {
+    path: 'offers/register',
+    loadChildren: 'app/pages/register/register.module#RegisterModule'
+  },
+  {
     path: 'home',
     loadChildren: 'app/pages/home/home.module#HomeModule'
   },

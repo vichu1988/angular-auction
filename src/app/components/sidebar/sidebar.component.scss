@@ -55,7 +55,7 @@ aside {
 
 .menu-toggle-wrapper{
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 100%;
 
   @media screen and (min-width: $tablet){
@@ -65,9 +65,9 @@ aside {
 .menu-toggle{
   cursor: pointer;
   display: block;
-  height: 3.25rem;
+  height: 3rem;
   position: relative;
-  width: 3.25rem;
+  width: 3rem;
   margin-left: auto;
   background: $app-grey;
   border: none;
@@ -98,12 +98,26 @@ aside {
 
     &:nth-child(1) {
         top: calc(50% - 6px);
+
+      .is-active & {
+          -webkit-transform: translateY(5px) rotate(45deg);
+          transform: translateY(5px) rotate(45deg);
+      }
     }
     &:nth-child(2) {
         top: calc(50% - 1px);
+
+        .is-active & {
+          opacity: 0;
+        }
     }
     &:nth-child(3) {
       top: calc(50% + 4px);
+
+      .is-active & {
+        -webkit-transform: translateY(-5px) rotate(-45deg);
+        transform: translateY(-5px) rotate(-45deg);
+      }
     }
   }
 }

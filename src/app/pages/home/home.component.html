@@ -1,18 +1,14 @@
-<section class="section">
-  <!-- Title with button -->
-  <app-sub-title text="Featured Offerings">
-    <a class="button is-danger" tabindex="0">Register An Offer</a>
-  </app-sub-title>
-  <br>
-  <div class="columns is-multiline">
-    <div class="column is-4-tablet is-3-desktop" *ngFor="let offer of offers">
-      <app-offer-card [data]="offer"></app-offer-card>
-    </div>
+<app-sub-title text="Featured Offerings">
+  <a class="button is-danger" tabindex="0">Register An Offer</a>
+</app-sub-title>
+<br>
+<div class="columns is-multiline">
+  <div class="column is-4-tablet is-3-desktop" *ngFor="let offer of offers">
+    <app-offer-card [data]="offer"></app-offer-card>
   </div>
+</div>
 
-  <app-sub-title text="Recent Offerings"></app-sub-title>
-  <ng-template ngFor let-offer [ngForOf]="offers">
-      <app-offer-card [data]="offer" [isRow]="true"></app-offer-card>
-  </ng-template>
-
-</section>
+<app-sub-title text="Recent Offerings"></app-sub-title>
+<ng-template ngFor let-offer [ngForOf]="offers">
+  <app-offer-card [data]="offer" [isRow]="true"></app-offer-card>
+</ng-template>
