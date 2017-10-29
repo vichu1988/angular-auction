@@ -1,27 +1,28 @@
 @import "../../../assets/sass/app-variables.scss";
 @import "../../../assets/sass/bulma-variables.scss";
 
-:host{
+:host {
   &.is-row {
     display: block;
     padding-bottom: $size-7;
-    &:not(:first-child){
+    &:not(:first-child) {
       padding-top: $size-7;
     }
   }
 }
-.box.is-offering{
+
+.box.is-offering {
   h5 {
     color: $app-red;
   }
-  .level.is-top-bid{
+  .level.is-top-bid {
     .heading,
-    .title{
+    .title {
       color: $app-blue;
       margin-bottom: 0;
     }
-    .title{
-      &:before{
+    .title {
+      &:before {
         content: "\20B9";
         font-size: 1.25rem;
         font-weight: 100;
@@ -29,20 +30,20 @@
       }
     }
   }
-  .level.is-place-bid{
-    .heading{
+  .level.is-place-bid {
+    .heading {
       margin-bottom: 0;
     }
-    .button{
+    .button {
       margin-bottom: 10px;
     }
   }
-  &.is-offering-row{
+  &.is-offering-row {
     .heading {
       display: none;
     }
-    .level.is-place-bid{
-      .heading{
+    .level.is-place-bid {
+      .heading {
         display: block;
       }
     }
@@ -50,17 +51,17 @@
       .heading {
         display: block;
       }
-      .level.is-place-bid{
-        .heading{
+      .level.is-place-bid {
+        .heading {
           display: none;
         }
       }
-      .level.is-place-bid{
-        .button{
+      .level.is-place-bid {
+        .button {
           margin-bottom: 0;
         }
       }
-      .level:not(:last-child){
+      .level:not(:last-child) {
         margin-bottom: 0.5rem;
       }
     }

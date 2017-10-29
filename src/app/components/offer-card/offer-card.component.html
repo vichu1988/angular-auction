@@ -1,31 +1,31 @@
 <div class="box is-offering" [ngClass]="{'is-offering-row': isRow}">
-    <div class="columns is-multiline">
-      <div class="column" [ngClass]="{'is-12': !isRow}">
-        <h5 class="subtitle is-size-5">{{data.title}}</h5>
-        <p>
-          <span>{{data.excerpt}}</span>
-          <br>
-          <small><i>Offered by: {{data.postedBy}}</i></small>
-        </p>
-        <p class="heading" *ngIf="isRow">{{data.totalBids}} Bids</p>
-      </div>
-      <div class="column" [ngClass]="{'is-12': !isRow, 'is-narrow': isRow}">
-        <div class="level is-mobile is-top-bid">
-            <div class="level-item has-text-centered">
-              <div>
-                <p class="heading">Current top bid</p>
-                <p class="title is-size-1">{{data.heighestBid.toLocaleString('en-IN')}}</p>
-              </div>
-            </div>
+  <div class="columns is-multiline">
+    <div class="column" [ngClass]="{'is-12': !isRow}">
+      <h5 class="subtitle is-size-5">{{data.title}}</h5>
+      <p>
+        <span>{{data.excerpt}}</span>
+        <br>
+        <small><i>Offered by: {{data.postedBy}}</i></small>
+      </p>
+      <p class="heading" *ngIf="isRow">{{data.totalBids}} Bids</p>
+    </div>
+    <div class="column" [ngClass]="{'is-12': !isRow, 'is-narrow': isRow}">
+      <div class="level is-mobile is-top-bid">
+        <div class="level-item has-text-centered">
+          <div>
+            <p class="heading">Current top bid</p>
+            <p class="title is-size-1">{{data.heighestBid.toLocaleString('en-IN')}}</p>
+          </div>
         </div>
-        <div class="level is-mobile is-place-bid">
-            <div class="level-item has-text-centered">
-              <div>
-                <a class="button is-danger" tabindex="0">Place A Bid</a>
-                <p class="heading">{{data.totalBids}} Bids</p>
-              </div>
-            </div>
+      </div>
+      <div class="level is-mobile is-place-bid">
+        <div class="level-item has-text-centered">
+          <div>
+            <a class="button is-danger" tabindex="0">Place A Bid</a>
+            <p class="heading">{{data.totalBids}} Bids</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>

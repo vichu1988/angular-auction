@@ -1,11 +1,11 @@
 @import "../../../assets/sass/app-variables.scss";
 @import "../../../assets/sass/bulma-variables.scss";
 
-:host{
+:host {
   display: block;
   padding: $size-7;
 }
 
-.is-subtitle{
+.is-subtitle {
   border-bottom: 1px solid $app-light-grey;
 }

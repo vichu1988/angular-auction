@@ -4,26 +4,27 @@
 .subtitle {
   color: $app-red;
 }
+
 p {
   margin-bottom: 15px;
 }
 
-.level-item{
-  .title{
-    &::before{
+.level-item {
+  .title {
+    &::before {
       content: "\20B9";
       font-size: 1.25rem;
       font-weight: 100;
       vertical-align: super;
     }
   }
-  .heading,.title{
+  .heading, .title {
     color: $app-blue;
     margin: 0;
   }
 }
 
-label.is-size-7{
+label.is-size-7 {
   display: block;
   margin-bottom: 5px;
 }

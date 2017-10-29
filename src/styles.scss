@@ -4,17 +4,16 @@
 @import "./assets/sass/bulma-custom.scss";
 @import "./assets/sass/app-shadows.scss";
 
-
-.is-subtitle{
-  .column.is-narrow{
+.is-subtitle {
+  .column.is-narrow {
     padding-right: 0;
     padding-left: 0;
-    .button{
+    .button {
       display: block;
       width: 100%;
       @media screen and (min-width: $tablet) {
-         display: inline-block;
-         width: auto;
+        display: inline-block;
+        width: auto;
       }
     }
   }

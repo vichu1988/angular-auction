@@ -1,5 +1,5 @@
-import { OfferCard } from '../../components/offer-card/offer-card.component';
-import { Component, OnInit } from '@angular/core';
+import {OfferCard} from '../../components/offer-card/offer-card.component';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   public offers: OfferCard[] = [];
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
     for (let i = 0; i < 4; i++) {

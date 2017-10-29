@@ -1,8 +1,8 @@
-import { ComponentsModule } from '../../components/components.module';
-import { RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RegisterComponent } from './register.component';
+import {ComponentsModule} from '../../components/components.module';
+import {RouterModule} from '@angular/router';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {RegisterComponent} from './register.component';
 
 @NgModule({
   imports: [
@@ -15,4 +15,5 @@ import { RegisterComponent } from './register.component';
   ],
   declarations: [RegisterComponent]
 })
-export class RegisterModule { }
+export class RegisterModule {
+}

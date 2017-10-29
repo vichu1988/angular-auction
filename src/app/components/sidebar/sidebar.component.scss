@@ -1,11 +1,12 @@
 @import "../../../assets/sass/app-variables.scss";
 @import "../../../assets/sass/bulma-variables.scss";
 
-:host{
+:host {
   display: block;
   min-width: 200px;
   height: 100%;
 }
+
 aside {
   display: block;
   position: fixed;
@@ -17,15 +18,16 @@ aside {
   z-index: 9999;
   transition: all 0.3s 0s ease-in-out;
 
-  &.is-active{
+  &.is-active {
     left: 0;
   }
 
-  @media screen and (min-width: $tablet){
+  @media screen and (min-width: $tablet) {
     left: 0;
   }
 }
-.sidebar-container{
+
+.sidebar-container {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -33,36 +35,37 @@ aside {
   padding: 1.5rem;
   overflow: auto;
 
-  .sidebar-flex{
+  .sidebar-flex {
     flex: 1;
     flex-shrink: 1;
   }
 
   .sidebar-logo,
-  .sidebar-menu{
+  .sidebar-menu {
     margin-bottom: 1.5rem;
   }
 }
 
-.menu-list{
+.menu-list {
   li a {
     border-bottom: 1px solid $app-light-grey;
-    &.is-borderless{
+    &.is-borderless {
       border: none;
     }
   }
 }
 
-.menu-toggle-wrapper{
+.menu-toggle-wrapper {
   position: absolute;
   top: 5px;
   left: 100%;
 
-  @media screen and (min-width: $tablet){
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }
-.menu-toggle{
+
+.menu-toggle {
   cursor: pointer;
   display: block;
   height: 3rem;
@@ -74,11 +77,11 @@ aside {
   border-top-right-radius: $radius;
   border-bottom-right-radius: $radius;
 
-  &:focus,&:active{
+  &:focus, &:active {
     outline: none;
   }
 
-  span{
+  span {
     background-color: $app-white;
     display: block;
     height: 1px;
@@ -97,19 +100,19 @@ aside {
     width: 16px;
 
     &:nth-child(1) {
-        top: calc(50% - 6px);
+      top: calc(50% - 6px);
 
       .is-active & {
-          -webkit-transform: translateY(5px) rotate(45deg);
-          transform: translateY(5px) rotate(45deg);
+        -webkit-transform: translateY(5px) rotate(45deg);
+        transform: translateY(5px) rotate(45deg);
       }
     }
     &:nth-child(2) {
-        top: calc(50% - 1px);
+      top: calc(50% - 1px);
 
-        .is-active & {
-          opacity: 0;
-        }
+      .is-active & {
+        opacity: 0;
+      }
     }
     &:nth-child(3) {
       top: calc(50% + 4px);
@@ -122,24 +125,24 @@ aside {
   }
 }
 
-.shadow{
+.shadow {
   position: fixed;
   width: 100vw;
   height: 100vh;
   top: 0;
-  left:0;
+  left: 0;
   z-index: 9998;
   background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s 0s ease-in-out;
 
-  &.is-active{
+  &.is-active {
     visibility: visible;
     opacity: 1;
   }
 
-  @media screen and (min-width: $tablet){
+  @media screen and (min-width: $tablet) {
     display: none;
   }
 }

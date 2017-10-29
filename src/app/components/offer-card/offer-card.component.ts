@@ -1,4 +1,4 @@
-import { Component, HostBinding, Input, OnInit } from '@angular/core';
+import {Component, HostBinding, Input, OnInit} from '@angular/core';
 
 export interface OfferCard {
   id: string | number;
@@ -18,7 +18,9 @@ export class OfferCardComponent implements OnInit {
   @Input() data: OfferCard;
   @Input() isRow = false;
   @HostBinding('class') className: string;
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
     this.className = this.isRow ? 'is-row' : '';
